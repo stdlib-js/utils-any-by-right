@@ -20,7 +20,7 @@ limitations under the License.
 
 # anyByRight
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Test whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.
 
@@ -213,12 +213,12 @@ bool = anyByRight( arr, threshold );
 
 ## See Also
 
--   [`@stdlib/utils/any-by`][@stdlib/utils/any-by]: test whether at least one element in a collection passes a test implemented by a predicate function.
--   [`@stdlib/utils/async/any-by-right`][@stdlib/utils/async/any-by-right]: test whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.
--   [`@stdlib/utils/every-by-right`][@stdlib/utils/every-by-right]: test whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.
--   [`@stdlib/utils/for-each-right`][@stdlib/utils/for-each-right]: invoke a function for each element in a collection, iterating from right to left.
--   [`@stdlib/utils/none-by-right`][@stdlib/utils/none-by-right]: test whether all elements in a collection fail a test implemented by a predicate function, iterating from right to left.
--   [`@stdlib/utils/some-by-right`][@stdlib/utils/some-by-right]: test whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.
+-   <span class="package-name">[`@stdlib/utils/any-by`][@stdlib/utils/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/async/any-by-right`][@stdlib/utils/async/any-by-right]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/every-by-right`][@stdlib/utils/every-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/for-each-right`][@stdlib/utils/for-each-right]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/none-by-right`][@stdlib/utils/none-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection fail a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/some-by-right`][@stdlib/utils/some-by-right]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.</span>
 
 </section>
 
@@ -269,8 +269,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-any-by-right/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-any-by-right?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-any-by-right.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-any-by-right/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/

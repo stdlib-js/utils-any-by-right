@@ -45,43 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-any-by-right
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-anyByRight = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by-right@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-any-by-right/tags). For example,
-
-```javascript
-anyByRight = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by-right@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var anyByRight = require( 'path/to/vendor/umd/utils-any-by-right/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by-right@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.anyByRight;
-})();
-</script>
+var anyByRight = require( '@stdlib/utils-any-by-right' );
 ```
 
 #### anyByRight( collection, predicate\[, thisArg ] )
@@ -204,14 +191,9 @@ var mean = context.sum / context.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by-right@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var anyByRight = require( '@stdlib/utils-any-by-right' );
 
 function threshold( value ) {
     return ( value > 0.95 );
@@ -228,11 +210,6 @@ for ( i = 0; i < arr.length; i++ ) {
 
 bool = anyByRight( arr, threshold );
 // returns <boolean>
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -305,8 +282,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-any-by-right.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-any-by-right
 
-[test-image]: https://github.com/stdlib-js/utils-any-by-right/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/utils-any-by-right/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/utils-any-by-right/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-any-by-right/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-any-by-right/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-any-by-right?branch=main
@@ -345,17 +322,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils-any-by/tree/umd
+[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils-any-by
 
-[@stdlib/utils/async/any-by-right]: https://github.com/stdlib-js/utils-async-any-by-right/tree/umd
+[@stdlib/utils/async/any-by-right]: https://github.com/stdlib-js/utils-async-any-by-right
 
-[@stdlib/utils/every-by-right]: https://github.com/stdlib-js/utils-every-by-right/tree/umd
+[@stdlib/utils/every-by-right]: https://github.com/stdlib-js/utils-every-by-right
 
-[@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils-for-each-right/tree/umd
+[@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils-for-each-right
 
-[@stdlib/utils/none-by-right]: https://github.com/stdlib-js/utils-none-by-right/tree/umd
+[@stdlib/utils/none-by-right]: https://github.com/stdlib-js/utils-none-by-right
 
-[@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils-some-by-right/tree/umd
+[@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils-some-by-right
 
 <!-- </related-links> -->
 
